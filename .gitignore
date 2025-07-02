@@ -1,2 +1,4 @@
 .env
 .venv
+backend/tests/__pycache__/test_calcul.cpython-310-pytest-8.4.1.pyc
+backend/modules/__pycache__/calcul.cpython-310.pyc
