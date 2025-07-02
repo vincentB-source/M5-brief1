@@ -4,6 +4,8 @@ from pydantic import BaseModel
 
 from os.path import join as join
 import json
+from modules.calcul import calcul_du_carre 
+
 
 app = FastAPI()
 logger.add("logs/prediction.log")
@@ -25,8 +27,8 @@ async def health():
 async def faire_calcul(nombre: Nombre) -> dict[str, str]:
     logger.info("Route '/faire_calcul/' (POST) appelée.")
 
-    carre = nombre.nombre**2
+    carre = calcul_du_carre(nombre.nombre)
     
-    logger.info(f"C'est carré !!! on a fait le calcul pour {nombre.nombre} : {carre}")
+    logger.info(f"C'est carré !! on a fait le calcul pour {nombre.nombre} : {carre}")
 
     return {"message": f'Alors pour {nombre.nombre} nous trouvons : {carre}'}
