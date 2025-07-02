@@ -36,3 +36,11 @@ jobs:
       run: |
         rm -rf /tmp/.buildx-cache
         mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+    - name: Build and push Docker image for frontend
+      uses: docker/build-push-action@v5
+      with:
+        context: ./frontend
+        push: true
+        tags: |
+          ${{ secrets.DOCKER_USERNAME }}/monappfrontend:latest
+          ${{ secrets.DOCKER_USERNAME }}/monappfrontend:${{ github.sha }}
