@@ -1,0 +1,21 @@
+networks:
+  my_network:
+
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
+    networks:
+      - my_network
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "8501:8501" #bon ports ?
+    depends_on:
+      - backend
+    networks:
+      - my_network

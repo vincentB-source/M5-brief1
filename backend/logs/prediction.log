@@ -1,0 +1,9 @@
+2025-07-01 16:34:03.171 | INFO     | main:faire_calcul:26 - Route '/faire_calcul/' (POST) appelée.
+2025-07-01 16:34:47.712 | INFO     | main:faire_calcul:26 - Route '/faire_calcul/' (POST) appelée.
+2025-07-01 16:35:37.552 | INFO     | main:faire_calcul:26 - Route '/faire_calcul/' (POST) appelée.
+2025-07-01 16:35:46.658 | INFO     | main:faire_calcul:26 - Route '/faire_calcul/' (POST) appelée.
+2025-07-01 16:35:46.659 | INFO     | main:faire_calcul:33 - Calcul fait pour 12 : 144
+2025-07-01 16:36:13.390 | INFO     | main:faire_calcul:26 - Route '/faire_calcul/' (POST) appelée.
+2025-07-01 16:36:13.391 | INFO     | main:faire_calcul:33 - Calcul fait pour 12 : 144
+2025-07-01 16:48:26.065 | INFO     | main:faire_calcul:26 - Route '/faire_calcul/' (POST) appelée.
+2025-07-01 16:48:26.066 | INFO     | main:faire_calcul:30 - C'est carré !!! on a fait le calcul pour 12 : 144
